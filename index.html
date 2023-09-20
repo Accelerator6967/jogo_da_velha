@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>teste de jogo da velha</title>
+  </head>
+  <body>
+    <h1>Jogo da velha</h1>
+
+    <div id="button-contains">
+      <button id="2-player">2 Players</button>
+      <button id="ia-play">Vs IA</button>
+    </div>
+
+    <div id="contain" class="">
+      <div class="boxer" id="blocker-1"></div>
+      <div class="boxer" id="blocker-2"></div>
+      <div class="boxer" id="blocker-3"></div>
+      <div class="boxer" id="blocker-4"></div>
+      <div class="boxer" id="blocker-5"></div>
+      <div class="boxer" id="blocker-6"></div>
+      <div class="boxer" id="blocker-7"></div>
+      <div class="boxer" id="blocker-8"></div>
+      <div class="boxer" id="blocker-9"></div>
+
+      <div id="scorepoint-contain">
+        <h2>Placar de pontos</h2>
+        <span class="score-boxer">
+          <span id="x-scorepoint">X</span>:
+          <span id="scorepoint-1">0</span>
+        </span>
+
+        <span class="score-boxer">
+          <span id="o-scorepoint"></span>:
+          <span id="scorepoint-2">0</span>
+        </span>
+      </div>
+    </div>
+
+    <div class="hider">
+      <div class="x">X</div>
+      <div class="o"></div>
+    </div>
+
+    <div id="messenger" class="hider">
+      <p></p>
+    </div>
+    <script src="js/java.js"></script>
+  </body>
+</html>

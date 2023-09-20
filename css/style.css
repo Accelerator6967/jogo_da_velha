@@ -1,0 +1,155 @@
+body {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(
+    to bottom,
+    #ee0000,
+    #c28b16,
+    #d15fee,
+    #ffc125,
+    #00cd66,
+    #eeb4b4,
+    #ee7600,
+    #00e5ee
+  );
+}
+
+h1 {
+  font-size: 35px;
+  color: rgb(0, 255, 170);
+}
+
+/*botões*/
+#button-contains {
+  margin-bottom: 25px;
+}
+
+#button-contains button {
+  border: none;
+  border-radius: 20px;
+  padding: 15px 20px;
+  margin: 0 12px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #301da1;
+  background-color: #1facbe;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#button-contains button:hover {
+  color: #00e5ee;
+  background-color: #301da1;
+}
+
+/*jogo*/
+#contain {
+  width: 299px;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  
+  /*centralizar uma div na tela*/
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.boxer {
+  border: 6px solid rgb(0, 0, 0);
+  height: 100px;
+  box-sizing: border-box;
+  flex: 1 1 33%; /*garantir as 3 divs por linha*/
+}
+
+#blocker-1,
+#blocker-2,
+#blocker-3 {
+  border-top: none;
+}
+
+#blocker-1,
+#blocker-4,
+#blocker-7 {
+  border-left: none;
+}
+
+#blocker-3,
+#blocker-6,
+#blocker-9 {
+  border-right: none;
+}
+
+#blocker-7,
+#blocker-8,
+#blocker-9 {
+  border-bottom: none;
+}
+
+/*simbolos*/
+
+.x {
+  font-size: 74px;
+  color: rgb(204, 0, 255);
+  display: inline-block;
+}
+
+.o {
+  width: 40px;
+  height: 40px;
+  border: 8px solid cyan;
+  display: inline-block;
+  border-radius: 50%;
+  top: 50%;
+}
+
+/*placar*/
+
+#scorepoint-contain {
+  font-weight: bold;
+  margin-top: 28px;
+  font-size: 22px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#x-scorepoint {
+  color: rgb(204, 0, 255);
+  margin-right: 4px;
+}
+
+#o-scorepoint {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border: 3px solid cyan;
+  border-radius: 50%;
+  margin-right: 3px;
+}
+
+#score-boxer {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+/*mensagem*/
+
+#messenger p {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  top: 206px;
+  right: 0;
+  left: 0;
+  width: 505px;
+  background-color: #2b2f30;
+  font-size: 51px;
+  color: #04f3cb;
+  padding: 22px;
+  font-family: fantasy;
+  background-color: #2b2f30;
+}
+
+.hider {
+  display: none !important;
+}
